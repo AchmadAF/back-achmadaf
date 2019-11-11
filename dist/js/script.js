@@ -7,6 +7,8 @@ function typeit() {
 }).go();
 }
 
+typeit();
+
 $('.nav-link').on('click', function(event) {
 	$('.nav-link').removeClass('active');
 	$(this).addClass('active');
