@@ -1,13 +1,9 @@
-function typeit() {
-	new TypeIt('#typing', {
-	strings: "Hi ! I'm Achmad",
-	speed: 200,
-	waitUntilVisible: true,
-	loop: true
+new TypeIt('#typing', {
+ strings: "Hi ! I'm Achmad",
+ speed: 200,
+ waitUntilVisible: true,
+ loop: true
 }).go();
-}
-
-typeit();
 
 $('.nav-link').on('click', function(event) {
 	$('.nav-link').removeClass('active');
@@ -16,7 +12,12 @@ $('.nav-link').on('click', function(event) {
 $('#home').on('click', function(event) {
 	$('.cover-heading').html('<p id="typing"></p>');
 	$('#deskripsi').text("I graduated from SMKN 1 Kediri on Veteran Street number 09. I like other than the ones I don't like. It doesn't matter if you want to contact me. And I created this website to fill my activities. Thank you for visiting.");
-	typeit();
+	new TypeIt('#typing', {
+ 	 strings: "Hi ! I'm Achmad",
+ 	 speed: 200,
+ 	 waitUntilVisible: true,
+ 	 loop: true
+	}).go();
 });
 
 $('#blog').on('click', function(event) {
